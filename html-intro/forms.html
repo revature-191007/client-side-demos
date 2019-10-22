@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Forms are a set of tools for providing user feedback or
+    user input to the HTML document, and also providing a mechanism
+    for submitting this user input to a server for processing -->
+
+    <!-- The form element defines how a request will be sent by the form
+    and to where it will be sent-->
+    <form method="post">
+
+        <!--
+            Input fields should be provided a name which will be used
+            as the key for key value pairs. They should also be provided
+            with a type which indicates what kind of input they are. For
+            input types that require user selection rather than user input
+            you should provide value attributes to define what the input
+            options mean to your application.
+
+        -->
+        <label for="username-input">Username</label>
+        <input type="text" id="username-input" name="q">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <br>
+        <label>Email</label>
+        <input type="email" placeholder="email@gmail.com" name="email">
+        <br>
+        <input type="button" value="Click me">
+        <br>
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <label>Birthday</label>
+        <input type="date" name="birthdate">
+        <br>
+        <label>Favorite Number</label>
+        <input type="number" name="favorite-number">
+        <br>
+        <label></label>
+        <select name="pizza-topping">
+            <option value="1">Pepperoni</option>
+            <option value="2">Pineapple</option>
+            <option value="3">Sausage</option>
+            <option value="4">Cheese</option>
+            <option value="5">Rice</option>
+            <option value="6">BCR</option>
+        </select>
+
+        <span>Favorite Food</span>
+        <br>
+        <input type="radio" name="food" value="burger">Burger</input>
+        <input type="radio" name="food" value="rice">Rice</input>
+        <input type="radio" name="food" value="beans">Beans</input>
+        <input type="radio" name="food" value="juice">Juice</input>
+        <input type="radio" name="food" value="barbacue">Barbaque</input>
+        <input type="radio" name="food" value="fish-sticks">Fish Sticks</input>
+        <input type="radio" name="food" value="sesame-balls">Sesame Balls</input>
+        
+        <br>
+        
+        <span>Favorite Food</span>
+        <br>
+        <input type="checkbox" name="ok-food" value="burger">Burger</input>
+        <input type="checkbox" name="ok-food" value="rice">Rice</input>
+        <input type="checkbox" name="ok-food" value="beans">Beans</input>
+        <input type="checkbox" name="ok-food" value="juice">Juice</input>
+        <input type="checkbox" name="ok-food" value="barbacue">Barbaque</input>
+        <input type="checkbox" name="ok-food" value="fish-sticks">Fish Sticks</input>
+        <input type="checkbox" name="ok-food" value="sesame-balls">Sesame Balls</input>
+
+        <br>
+        <label>Comments</label>
+        <br>
+        <textarea name="comments"> </textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
