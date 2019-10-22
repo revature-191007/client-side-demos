@@ -1,0 +1,76 @@
+/*
+    Selector connectors:
+    * a > b - direct child selector
+        div > p - selects all p tags within
+            a div 
+
+    * a b - descendant selector
+        div p - selects all child p tags of
+            div
+
+    * a, b - union selector
+        div, b - selects all div tags and all p tags
+
+    * div.b - intersection selector
+        div.b - Selects only divs that are also
+        class b 
+
+    * a ~ b - sibling selector
+        a ~ b - selects any b that is a sibling 
+            following a
+
+    * a + b - immediate sibling
+        a + b - selects the b that immediately 
+            follows a
+
+    * a[attribute=value] - Attribute Selector
+        selects only a with attribute set or 
+        attribute equal to value
+*/
+
+#c {
+    width: 500px;
+    height: 500px;
+    background: green;
+    padding: 10px;
+}
+
+
+#c * {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    background: rgba(255, 255, 255, 0.5);
+    margin: 3px;
+}
+
+#c > * {
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+#d, #e {
+    border: 1px solid yellow;
+}
+
+div#d {
+    border-color: red;
+}
+
+#d + * {
+    background-color: hotpink;
+}
+
+#d ~ * {
+    border-color: orange;
+}
+
+input[type="text"] {
+    background: red;
+}
+
+input[disabled] {
+    width: 1px;
+    height: 1px;
+}

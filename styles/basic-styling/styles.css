@@ -1,0 +1,82 @@
+:root {
+    --font: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+
+    /*
+        serif
+        sans-serif
+        cursive
+        fantasy
+        monospace
+    */
+
+    font-family: var(--font);
+
+    
+    /*
+        CSS Size Units
+        px - "pixel"
+        % - percent (of the parent component)
+        vmax - 1/100 view max
+        vmin - 1/100 view min
+        vw - 1/100 view width
+        vh - 1/100 view height
+        em - M - The size of the letter M from the parent element
+        rem - "relative M" - The size of the letter M from the root element
+        */
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--font);
+}
+
+#content-container {
+    max-width: 75%;
+
+    /* How to center a block element */
+    margin: 0 auto;
+
+    /*
+        Color Units
+        Literals (blue, white, red, green, etc.)
+        rgb(0~255, 0~255, 0~255)
+        rgba(0~255, 0~255, 0~255, 0~1) alpha = opacity
+        #AA00EE - (0-F)*2 -> 16 * 16 = 256
+        hsv(hue, saturation, value)
+        hsl(hue, saturation, luminocity)
+    */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+}
+
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+body {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fseamless-monochrome-eyelash-pattern-background_3119-333.jpg%3Fsize%3D338%26ext%3Djpg&f=1&nofb=1);
+}
+
+p {
+    text-indent: 5rem;
+    font-family: var(--font);
+}
+
+img {
+    float: right;
+}

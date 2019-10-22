@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            color: white;
+            background: purple;
+        }
+    </style>
+    <!-- How to embed stylesheet -->
+    <link type="text/css" ref="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <!-- Locations where styling rules can be applied
+        1. Inline
+            * Advantages:
+                * Located right where the style is wanted
+            * Disadvantages
+                * Clutters out actual content
+                * Not reusable
+        2. Style tag (head)
+            * Advantages:
+                * Reusable to multiple elements within the file
+            * Disadvantages: 
+                * Limited to a single HTML document
+                * Sort of clutters HTML document
+        3. External Stylesheet
+            * Advantages:
+                * Reusable between multiple pages
+                * Cacheable between pages (less network activity)
+            * Disadvantages
+                * Linking is more complicated than not linking?
+                * May be more difficult to discern styles from html?
+    
+    
+    FOUC - Flash of unstyled content
+    -->
+
+    <h1 style="color: blue; font-family:Arial, Helvetica, sans-serif; background-color: green; font-size: 3rem;">This is a heading</h1>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+</body>
+</html>
