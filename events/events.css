@@ -1,0 +1,29 @@
+body, html, .parent {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* selects all .parent and all .child */
+.parent, .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    height: 90%;
+    width: 90%;
+    background: rgba(0, 255, 0, 0.1);
+}
+/*  selects only any .child that is a direct child of .parent */
+.parent > .child {
+    height: 500px;
+    width: 500px;
+    background: magenta;
+}
+
+.selected {
+    background: rgba(0, 0, 255, 0.1);
+}
