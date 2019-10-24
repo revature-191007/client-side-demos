@@ -1,0 +1,42 @@
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    transition: all 500ms ease-in-out;
+}
+
+#wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.blue-background {
+    background: lightsteelblue;
+    color: #333;
+}
+
+.red-background {
+    padding-left: 700px;
+    background: pink;
+    color: #444;
+    transform: rotate3d(2, -4, -1, 80deg);
+}
